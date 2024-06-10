@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>平行線的奇蹟〈十六〉</title>
+	<style type="text/css">
+		html {
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-text-size-adjust: 100%;
+		  text-size-adjust: 100%;
+		}
+		body{
+		    
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		}
+		p
+		{
+		max-height: 100%;
+		line-height: 1.8;
+		font-family: Arial;
+		 font-size: 11pt;
+		 font-style: normal;
+		}
+		.topic{
+			max-height: 100%;			
+			font-family: Arial;
+			 font-size: 14pt;
+			 font-style: normal;
+		}
+		#sendmsg{
+		    display:none;
+		}
+		#sendmsg2{
+		    display:block;
+		    -webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+		    
+		}
+		
+		/*大型桌機外觀*/
+	@media screen and (min-width: 1001px){/*裝置寬度大於1200px 從1201px開始*/
+	body{
+		    
+			-webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		    
+		}
+		#main{
+		    width:1000px;
+		    margin:0 auto;
+		    justify-content:center;   
+		}
+		.rotate{
+          -webkit-transform:rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        #sendmsg{
+		    display:block;
+		}
+		#sendmsg2{
+		    display:none;
+		}
+	}
+	</style>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+		    //alert('success');
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom").value;
+    			var subject=document.getElementById("sendsubject").value;
+    			var senderName=document.getElementById("sendname").value;
+    			var context=document.getElementById("sendContext").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom");
+		    a.value='';
+		    var b = document.getElementById("sendsubject");
+		    b.value='';
+		    var c = document.getElementById("sendname");
+		    c.value='';
+		    var d = document.getElementById("sendContext");
+		    d.value='';
+		}
+		function sendmail_mobile(){
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom_m").value;
+    			var subject=document.getElementById("sendsubject_m").value;
+    			var senderName=document.getElementById("sendname_m").value;
+    			var context=document.getElementById("sendContext_m").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom_m");
+		    a.value='';
+		    var b = document.getElementById("sendsubject_m");
+		    b.value='';
+		    var c = document.getElementById("sendname_m");
+		    c.value='';
+		    var d = document.getElementById("sendContext_m");
+		    d.value='';
+		}
+	</script>
+    
+</head>
+<body>
+    <div id="main">
+    <p class="topic">《平行線的奇蹟》章十六：別離</p><hr>
+    <p>　因為曾經歷一段動盪不安、生離死別的日子，平穩才顯得珍貴而感受深刻，但久了就像空氣、逐漸感受不到它的存在。<br />　只有在意外與悲劇突襲時、隨之產生的傷痛才能再一次的凸顯這樣的安逸有多麼重要、想起身邊的人事物多麼需要值得珍惜──<br /><br /><br />＊＊＊<br /><br /><br />　昨晚忍又失眠了。<br />　起因就是睡前的月下小酌，被她灌得酩酊大醉的富岡一覺到天亮睡得很好、而她在床上翻來覆去只覺煩悶、無法入眠。<br />　不過她原本就有慣性失眠的問題，儘管一夜沒睡，身體會產生什麼反應、精神上的極限她很清楚，所以隔天還是照常上工了。<br />　幸好今天買藥的客人和看診的病患不多，尚在忍體力可負荷的範圍、讓她不禁鬆了一口氣，心想應該可以順利持續到下班。<br /><br />　離打烊還有一個小時，這時藥房已經可以慢慢先收拾一些品項了。經過一天的勞動、缺乏睡眠的忍基本上差不多是極限了，大概是一閉上眼睛三秒就會睡著的程度吧？她在櫃檯點完今天的入帳金額後，眼神渙散的盯著桌上的某一張紙、上面的字好像有了生命，在她眼中看起來不規則的扭動著。<br /><br />「忍小姐、忍小姐──」<br /><br />　這些字居然還會開口說話、甚至叫她的名字，忍覺得好神奇、但驚奇感只維持一秒後她只感到眼皮沉重、頭昏眼花⋯&zwnj;⋯&zwnj;似乎快不行了，乾脆跟在裡面忙的菜穗打聲招呼先回蝶屋好了、她甚至這樣考慮著──<br /><br />「忍小姐！」<br /><br />　忍神遊的意識終於被這一聲呼喚拉回現實，猛然抬頭一看才發現櫃檯前站了個人、對方熟悉的市松花紋上衣和赭紅髮映入眼簾，原來是富岡的同門師弟、竈門炭治郎。<br /><br />「⋯&zwnj;⋯&zwnj;炭治郎君？」用力地眨了眨眼，「抱歉啊，沒注意到你，怎麼來了？」<br />　懷疑自己剛剛是不是睡著了、這麼大個人都沒看到，她感到有些不好意思。<br />「你還好嗎？看起來很累的樣子。」炭治郎關心的問，從他的鼻子可得知忍的煩惱氣息不但比昨天更濃厚、還夾帶著哀傷和極度疲憊。<br />「⋯&zwnj;⋯&zwnj;說不上好⋯&zwnj;⋯&zwnj;」忍苦笑了下，「總之我現在很想睡一覺⋯&zwnj;⋯&zwnj;」<br />「對不起、這個時間才來，我是來幫善逸拿腳痛的藥膏貼布的。」炭治郎道。<br />「貼布嗎？等我一下，我拿給你。」<br />　說完轉身在櫃台後幾乎整面牆大的木格櫃上，完全不需思考的忍打開其中一個櫃子、從其中拿出一小疊貼布。<br />　忍將貼布交給了炭治郎，後者誠心收下後道謝：「謝謝，總是這樣麻煩你。」接著把綁在身上的一大包袱解下放在桌上：「對了！這是我家菜園最近收成的蔬果，有白蘿蔔、蔥、薑、大黃瓜⋯&zwnj;⋯&zwnj;想說拿一些給你們。」<br />「啊、你還特地背這些下山嗎，辛苦了。」忍稍微欣賞了下炭治郎帶來的蔬菜，雖然他們自種的菜園產出的果菜並不能說賣相良好、但味道絕對是可以保證的，很有自給自足的小農家樸實純粹的原始韻味。<br />　而且富岡特別喜歡用他們種的白蘿蔔做出來的鮭大根、看到這些蘿蔔他一定很開心，忍心想。似乎也好一陣子沒吃了，乾脆今晚就來煮鮭大根吧。<br /><br />「對了，忍小姐⋯&zwnj;⋯&zwnj;」炭治郎抓抓頭，「那個、其實我還想問昨天、關於我們聊到的⋯&zwnj;⋯&zwnj;」<br />　除了幫忙拿藥之外，他今天來還有另一個目的是想知道忍是否有實行昨天他提供的方法和結果為何？<br />　不過從味道聞來，似乎有點不太妙啊⋯&zwnj;⋯&zwnj;他心想。<br />　果不其然，忍垂下雙肩嘆了一口氣，隨之而來一股低氣壓籠罩著他倆。<br />「忍、忍小姐⋯&zwnj;⋯&zwnj;還好嗎、義勇先生的狀況很糟糕嗎⋯&zwnj;⋯&zwnj;？」見她如此低落，炭治郎的擔憂又加上了恐懼，深怕富岡的問題十分棘手。<br />「不，其實也不是什麼很嚴重的事⋯&zwnj;⋯&zwnj;」垂著頭的忍低聲喃喃，「是我個人的問題⋯&zwnj;⋯&zwnj;」<br />「呃⋯&zwnj;⋯&zwnj;嗯⋯&zwnj;⋯&zwnj;？」聽她這樣說炭治郎的感受又增加混亂了，「忍小姐，可以再解釋得清楚一點嗎？我太笨了，聽不大懂⋯&zwnj;⋯&zwnj;」<br />「唔⋯&zwnj;⋯&zwnj;」<br /><br />　炭治郎果然是個好孩子，真心誠意地為她和富岡憂心著。但釐清目前狀況後一切似乎只是忍的單方面的單向想法影響了自身的心情、既然如此，這樣的困擾還是留給自己煩惱就好──<br /><br />　正當忍思索著該怎麼向眼前的少年委婉的略過自己的問題時，藥房的門被用力推開了，被大力的開門聲嚇到的炭治郎和忍同時向門口望去。<br /><br />「呼、呼、呼──」<br />　雙手扶在門邊上氣不接下氣、似乎是用盡全力跑來的是原三上藥房的老闆‧三上耕助。雖然喘氣不止，但他無暇顧及自己，聲嘶力竭喊道：「小、小忍──！」<br />「耕助先生！怎麼了嗎？」第一次看到耕助如此驚慌失措，她和炭治郎暫停了話題，趕緊上前攙扶。<br />「快、快、快去我家、看看我家老太婆⋯&zwnj;⋯&zwnj;」抓住忍的手，耕助的眼神又驚又恐：「剛剛她突然說胸口很痛，然後沒幾分鐘就倒在地上不省人事了⋯&zwnj;⋯&zwnj;拜託、救救她！」<br />「我知道了！」忍趕忙衝到診療室拿了外出用的藥箱回到玄關，由於耕助跑來藥房已經耗費了全部體力、雙腳癱軟，因此炭治郎便自告奮勇表示由他背著老人家移動、和忍一同趕往三上夫婦的家。<br /><br />　趕路途中忍心中一直惴惴不安：小春本來就有心血管的毛病，儘管平時有服藥也盡量休生養息不讓身體太累。但年老體衰畢竟是人類的不可抗力，病發起來是又猛又急、彈指之間的事。何況三上家離藥房有一段距離、一來一往之間又消耗不少時間──<br /><br />「拜託了⋯&zwnj;⋯&zwnj;！一定要讓我趕上⋯&zwnj;⋯&zwnj;！」<br /><br />　她衷心的向上天懇求，就算快一秒也好，只要能讓她及時拯救身邊重要的人。<br />　奔波的身影和那份祈願，和香奈惠逝世當夜的她巧妙的重疊了。<br /><br /><br />＊＊＊<br /><br /><br />　安靜的房間內，只聽見牆上的時鐘滴答滴答的走著。<br />　幾秒之後「喀」的一聲，時鐘敲出了十二下聲響。<br /><br />「都這個時間了──」<br />　富岡從桌上的帳本抬起頭，敲鐘的次數提醒他此時已是午夜。<br />　平常這個時間他早已入睡，即使還沒也差不多在床上呈現半醒半睡的狀態了──但現在的他雖異常清醒、卻始終心神不寧。<br /><br />　約莫在晚餐前，忍的鎹鴉來到蝶屋傳口信說會晚點回家，請大家先吃飯不用等她。儘管是這麼說，眾人還是很有默契的多等了忍半小時、確定她真的趕不上晚餐後才先用膳。<br />　而直到孩子們一個接一個準備就寢，忍還沒到家，不過倒是讓鎹鴉又飛了一趟傳信報平安。於是小葵她們倒也沒想太多，忙碌一天早早漱洗後紛紛睡了。<br /><br />　只有富岡，他的眼皮直跳個不停，跳得他心煩意亂。<br />　老實說有鎹鴉報信的話、確實應該不必擔心，可是不知為何他就是靜不下心。<br />　從戰事結束、進入蝶屋工作之後，他已經很久沒有這種心頭一陣一陣刺的感受了。現在的生活順遂，即使有任何超出他自身能力之外、無法應付的問題，但只要忍在的話，他就覺得人生好像沒什麼過不去的難關。<br />　或許聽來一點也不科學，但富岡打從心底認為忍的穩定也會相對帶給他安定的力量。因此現在的不安要素很有可能也是緣自於她。<br /><br />「嗯？」<br />　似乎隱約聽到外頭傳來潑水的聲音，是有人在打水嗎？蝶屋的取水用井離富岡這棟宅很近，加上現在夜深人靜，任何一點點聲響都會被放大。<br />　他推開門，穿上鞋前往水井一探究竟。<br /><br />　不久後他看到了井，同時也發現井邊多了一個人、打了一桶水蹲著正在洗臉。<br />　今晚月明星稀，藉由月光可以很容易的辨識出是何許人也，他愣了一下：「忍？」<br />　對方聞聲抬頭，微濕的髮絲垂散在臉旁，大部分的則披在肩上，而非平時白天綁的夜會卷。<br />　不僅是瀏海，仔細看的話在光線下忍的頭閃閃發光、每根髮絲幾乎都掛著水珠，連帶她的肩膀和衣襟都濕了。<br />「我去拿毛巾。」富岡注意到她手邊沒有毛巾，於是趕緊回房拿了一條乾淨的過來。<br />　等他回到井邊時，看到忍安靜的坐在一旁的板凳上，微微低頭、眼神失焦。<br />　富岡將毛巾披在她頭上，但她視若無睹、動也不動的像個雕像一般。<br />「忍⋯&zwnj;⋯&zwnj;發生什麼事了？」見她沒有要動作的意思，富岡只好用左手笨拙的擦著她的頭髮：「耕助先生和小春奶奶、還好嗎？」<br />　忍仍是絲毫不動、沒有說話，讓富岡憂心忡忡。他既擔心忍、也擔心三上夫婦兩老。鎹鴉口信只提到她要去三上夫婦家一趟、卻沒明說目的。現下她的反應讓他忍不住朝不好的方向聯想⋯&zwnj;⋯&zwnj;<br /><br />「──奶奶走了。」<br />　好不容易開口回話的忍聲細如紋，但這幾個字富岡聽得一清二楚。雖然已經做好心理準備，自心底湧出的悲傷仍不禁讓他胸口揪緊、停下了手。<br />　慈祥和藹的小春把蝶屋的大家都當作自己的孫子一樣關心，雖然後期因為身體因素她已經愈來愈少到藥房露面了，但每次來的時候總是會帶一堆土產、不忘跑去跟每個人噓寒問暖。<br /><br />　如同眾人奶奶一般的小春走了。<br /><br /><br />「怎、怎麼走的⋯&zwnj;⋯&zwnj;？」富岡試圖保持冷靜的問，喉嚨卻一陣乾啞。<br />「心肌梗塞。」忍輕聲道，她趕到現場的時候小春已經臉色蒼白、呼吸微弱。甚至等不及做出應急措施，就這麼停止呼吸。<br />　回憶當時那個畫面──忍、炭治郎和耕助等人衝到小春身旁，雖然奄奄一息卻還有一點微弱意識的小春、微微睜開一絲眼睛，吃力的環視周圍的三人，在忍的身上多停了兩秒後、最後將目光放在她終生的伴侶、與耕助的雙眼互相凝視──<br /><br />　最後彷彿放下牽掛一般，她緩緩閉上了眼。<br /><br />　儘管忍依舊嘗試對小春實施一連串的急救行動、後者仍是回天乏術。<br />　最後，一邊安撫傷心欲絕的耕助、忍和炭治郎稍微先簡單處理遺體後，決定明天再來安排小春的後事。<br />　忍不記得她是怎麼走回蝶屋的，唯一有印象的是離開三上家後她腦中一片空白、只是無知無覺的跟著炭治郎走──現在想想也是幸好有他在，讓她能竭力保持最後一點理性不至於崩潰。<br />　到了蝶屋後，儘管炭治郎仍不太放心，但忍再三強調自己沒事，於是他勸忍盡快進屋休息之後便先行離開了。<br /><br /><br />「⋯&zwnj;⋯&zwnj;我當初是不是應該把他們留在鎮上才對？」垂下的毛巾遮住了忍的眼睛：「如果我當初有堅決留住他們，我就來得及救奶奶了⋯&zwnj;⋯&zwnj;」<br />　因為了解小春的痼疾有其風險，忍就曾經建議兩老搬到鎮上、藥房附近，以便可以就近照顧、生活機能也好得多。如果他們有意願，她甚至能一次付清搬家和購屋的費用。<br />　不過夫婦倆表示住在郊外已經很習慣了，不想老是麻煩她，而且小春也很長一段時間沒發病了。既然他們堅持不搬，她也就尊重老人家的想法。<br /><br />　誰也沒料到久違一次的病發，卻也是最後一次，自此便天人永隔。<br /><br />「⋯&zwnj;⋯&zwnj;忍⋯&zwnj;⋯&zwnj;」富岡柔聲道：「那不是你的錯。」<br />　他的手輕輕摩娑著忍的頭髮，漸漸的他感受到顫抖透過毛巾不斷的傳遞到他掌心，讓富岡驚覺她整個人處於緊繃到幾乎快無法壓抑的狀態──<br />　於是他放下手，向前靠近一步，伸出僅有的手臂環抱住她，讓她的頭靠在他的肩膀上。<br /><br />　他感覺懷中的身軀似乎微微嚇了一跳，但沒有試圖掙脫，只是任由他抱著。<br />　又過了一會，她才慢慢地止住了顫抖、不再緊繃。<br /><br />「忍。」富岡的聲音在耳邊響起，「哭的話也沒關係，我看不到。」<br /><br />　緊閉雙眼的忍整顆頭埋進他的肩膀，倔強的吸著鼻子。本來她是不想哭的、眼眶是情緒的最後堤防，一旦潰堤了就無法停止──可是隨著剛剛用力一吸而來的、富岡身上的氣味，不知怎地讓她的淚腺變得脆弱又不堪一擊、再堅固的堤防也守不住。<br /><br />　最後她還是忍不住伸出了手、捉住富岡的衣服。<br />　緊抱著他，泣不成聲。</p>
+
+　<p><a href="bifurcation_17.html"><img src="arrow_next.png" width="100px" class="rotate"></a>(點此箭頭看下一章或 <a href="https://kissho.000webhostapp.com/kissho/index.html">回目錄頁</a>)</p>
+　<!--
+<br>
+    <div id="sendmsg">
+        <p>&nbsp;</p>
+        <p>想說的話：</p>
+        <p>你的大名：<input type="text" id="sendname"/></p>
+        <p>你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom" value="_guest@gmail.com" /></p>
+    	<p>主題：<input type="text" id="sendsubject" value="關於這故事我想說..." size="30"/></p>
+    	想說什麼：<br><textarea id="sendContext" cols="50" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail" onclick="javascript:return sendmail()" value="send">送出</button>
+    </div>
+    <div id="sendmsg2">
+        <p>想說的話：</p>
+        你的大名：<input type="text" id="sendname_m"/><br>
+        你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom_m" value="_guest@gmail.com" /><br>
+    	主題：<input type="text" id="sendsubject_m" value="關於這故事我想說..." size="30" />
+    	<br>
+    	想說什麼：<br>
+    	<textarea id="sendContext_m" style="width:90%;" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail_m" onclick="javascript:return sendmail_mobile()" value="send">送出</button>
+    </div>
+    -->
+</div>
+
+</html>

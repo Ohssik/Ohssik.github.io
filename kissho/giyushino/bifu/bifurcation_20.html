@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>平行線的奇蹟〈二十〉</title>
+	<style type="text/css">
+		html {
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-text-size-adjust: 100%;
+		  text-size-adjust: 100%;
+		}
+		body{
+		    
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		}
+		p
+		{
+		max-height: 100%;
+		line-height: 1.8;
+		font-family: Arial;
+		 font-size: 11pt;
+		 font-style: normal;
+		}
+		.topic{
+			max-height: 100%;			
+			font-family: Arial;
+			 font-size: 14pt;
+			 font-style: normal;
+		}
+		#sendmsg{
+		    display:none;
+		}
+		#sendmsg2{
+		    display:block;
+		    -webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+		    
+		}
+		.explain{
+		    color: silver;
+		}
+		
+		/*大型桌機外觀*/
+	@media screen and (min-width: 1001px){/*裝置寬度大於1200px 從1201px開始*/
+	body{
+		    
+			-webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		    
+		}
+		#main{
+		    width:1000px;
+		    margin:0 auto;
+		    justify-content:center;   
+		}
+		.rotate{
+          -webkit-transform:rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        #sendmsg{
+		    display:block;
+		}
+		#sendmsg2{
+		    display:none;
+		}
+		.explain{
+		    color: silver;
+		}
+	}
+	</style>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+		    //alert('success');
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom").value;
+    			var subject=document.getElementById("sendsubject").value;
+    			var senderName=document.getElementById("sendname").value;
+    			var context=document.getElementById("sendContext").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom");
+		    a.value='';
+		    var b = document.getElementById("sendsubject");
+		    b.value='';
+		    var c = document.getElementById("sendname");
+		    c.value='';
+		    var d = document.getElementById("sendContext");
+		    d.value='';
+		}
+		function sendmail_mobile(){
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom_m").value;
+    			var subject=document.getElementById("sendsubject_m").value;
+    			var senderName=document.getElementById("sendname_m").value;
+    			var context=document.getElementById("sendContext_m").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom_m");
+		    a.value='';
+		    var b = document.getElementById("sendsubject_m");
+		    b.value='';
+		    var c = document.getElementById("sendname_m");
+		    c.value='';
+		    var d = document.getElementById("sendContext_m");
+		    d.value='';
+		}
+	</script>
+    
+</head>
+<body>
+    <div id="main">
+    <p class="topic">《平行線的奇蹟》章二十：彼世</p><hr>
+<p>　行走在小路上已經大概十分鐘左右了。<br />　在這十分鐘的路程中富岡忽然察覺到「說不定自己已經死了」的可能性，畢竟他也清楚自己的身體有緩慢走下坡的狀況，只是沒想到斑紋的副作用來得如此措手不及嗎？說倒就倒。<br /><br />　若真的大限已到，富岡倒也沒懷著什麼太大的遺憾。只是倒下前一刻他記得他還在與忍對話，這一幕肯定嚇壞她了吧？他苦笑、覺得對她有點抱歉。<br />　說到抱歉，他又想起昨天小葵說家裡的米缸快沒米了，自己答應她說明天要去買米的。而且已經月底了，要把這個月的帳做完給忍過目才行。鱗瀧老師的生日快到了，他還在煩惱要給老師買什麼作壽禮⋯&zwnj;⋯&zwnj;<br />　明明有好多好多事還沒完成、好多好多的事還沒去做，就這麼無預警的離開人世了。生命真是短暫且倏忽即逝啊⋯&zwnj;⋯&zwnj;<br /><br />「如果有多一點時間可以相處就好了。」他稍感惋惜地想。<br />　不過能在死前看到忍重新振作、恢復以往的樣子，他打從心底感到欣慰。儘管走得這樣突然有些過意不去，但蝶屋的大家都是堅強的孩子，興許過一段時間就能走出傷痛了吧，他想。<br /><br />　帶著淡淡感傷卻釋然的情緒，富岡漫步在前往「彼世」的路上。<br /><br /><br />「有點奇怪。」<br /><br />　又走了十分鐘，富岡依舊沒有離開這條林間道路。他曾聽說人在死後要渡過一條名叫「三途川」的河流，所以他一直預期自己應該會走到河邊、有渡口或是船夫在等他之類的⋯&zwnj;⋯&zwnj;還是走錯路了嗎？可是眼前明明只有一條路、身旁的景色一直都大同小異，富岡雖然覺得納悶，但除了一直往前走之外似乎也沒有其他辦法。<br /><br />　又經過下一個十分鐘，在一成不變的林景和道路上總算出現一點小小的異處──他遙望到前方有一個纖小的影子，抱著膝蓋蹲在路邊。<br />　好不容易發現除了他以外的人影，富岡有些感動。從對方的身形來看應該是個小女孩，身上穿著楓葉花紋的和服，臉埋在雙膝中，因此他看不見他的面貌。<br />　愈走愈近之後，看到女孩的頭上、後腦杓的部分，別著一個頗為顯眼的髮飾，令富岡不禁怔住了。<br /><br />　是一個蝴蝶形狀的髮飾，那樣式、他再熟悉不過了──<br /><br /><br />　目前為止發生的一切都讓富岡感到既奇幻又匪夷所思。<br />　沒有河川、沒有渡口、沒有船隻、也沒有船夫。就連聽說可能會碰見先離世的親朋好友：例如蔦子姊或錆兔，也完全沒有見著。<br />　在前往彼世的路上，唯一遇到的眼前的小女孩、並非富岡的親人，甚至她根本還沒死吧！富岡只覺腦袋一片混亂、愣在原地不知該如何是好。<br /><br />　女孩蹲在地上、對富岡的到來渾然未覺。豎耳一聽，似乎有個微弱的嗚咽聲，原來她正在嚶嚶啜泣著。<br />　看來是發生什麼事了吧、不管怎樣還是先安撫她再說，他心想、於是更走近了點。<br /><br />「──忍？」<br /><br />　女孩聽見了呼喚，抬起頭來望向聲音的來源。<br />　雖然滿面淚水、雙眼紅腫又哭花了臉、但女孩一雙靈動清澈的紫色大眼、清秀的面貌──這張臉確實就是富岡認識的她、「生前」最後一刻仍掛念不已的她。只是比他認知的好像年幼了不少。<br /><br />　儘管哭得梨花帶雨，女孩看到富岡的瞬間立刻站起身退了幾步、警戒的望著他。<br />「⋯&zwnj;⋯&zwnj;你是誰？」噙著淚，她哽咽而緊張的問道：「為什麼知道我的名字？」<br />「唔⋯&zwnj;⋯&zwnj;」看來她並不認識我、富岡暗忖。這倒不意外，雖然是熟識，但眼前的女孩目測不會超過十歲，這個年紀的忍怎麼可能認識他。<br />「我叫富岡義勇。」總之先報上自己的姓名，富岡想了一下後，說：「是⋯&zwnj;⋯&zwnj;你姊、呃，是承蒙你父母開的藥，才治好我的病。」<br />　本想自稱是香奈惠的舊識，但香奈惠這時候也是個孩子，去哪認識一個來歷不明的成年男性？於是他趕緊急中生智、將關係連接到忍的雙親上。<br />「曾聽他們提過有兩個女兒，看到你的樣貌想說你應該是其中的妹妹、吧⋯&zwnj;⋯&zwnj;？」<br />「嗯⋯&zwnj;⋯&zwnj;」聽完富岡解釋的忍似乎稍微放下了戒心，「對⋯&zwnj;⋯&zwnj;」<br />「發生什麼事？你怎麼會在這裡哭？」他接著問道。<br />「我找不到、我爸媽、和姊姊⋯&zwnj;⋯&zwnj;」忍回答，大概是剛剛哭得厲害，說話間還是一抽一抽的。<br />見她說得傷心，富岡雖一方面心中不忍，卻也不禁疑惑──現在他所經歷的難道是忍的過去⋯&zwnj;⋯&zwnj;？可是沒道理她父母和姊姊會把這麼小的她丟著一人不管啊⋯&zwnj;⋯&zwnj;<br />「不如我跟你一起去找吧、你爸媽和姊姊。」富岡提議，「我們依照你剛剛走來的路走回去再找一次吧。」<br />「唔⋯&zwnj;⋯&zwnj;好、可是⋯&zwnj;⋯&zwnj;」忍面有難色的說：「我剛剛蹲太久了、現在腳很痠⋯&zwnj;⋯&zwnj;」<br />　富岡一聽，便走到她面前背對她蹲下身：「上來吧。」<br />　忍依言乖乖地爬上他的背，緊抓他的肩膀。然後依她的指示、兩人沿著原路慢慢往回走。<br /><br />　事情進展到現在，富岡猜想他人大概並非在彼世了，只不過也不清楚這個地方、甚至這個世界，到底是什麼？為什麼會遇見小時候的忍？還有一直以來姊妹倆都是形影不離、為何現在香奈惠沒有陪在妹妹身邊？<br /><br />　儘管內心諸多疑問，但現下還是先處理少女的問題吧⋯&zwnj;⋯&zwnj;<br /><br /><br />＊＊＊<br /><br /><br />　這日忍如往常一樣，自藥房下班後便到珠世的書房報到。<br />　她將上次借回去的書全部讀完之後放回原位、又從架上取了新的幾本，在旁邊的桌椅坐下後很快翻開了書開始閱讀，在腦中一邊模擬藥物調配一邊沙沙沙的抄寫筆記。<br /><br />「你來了。」<br /><br />　正當她孜孜不倦的讀著書時，門口傳來熟悉的聲音。忍知道那是誰、並不搭理，連眉毛都沒有動一下。<br /><br />　那是愈史郎。<br /><br />「喂&mdash;&mdash;」他的聲音在桌邊響起，「你最近在配治斑紋的藥對吧？」<br />　忍頭也不抬的「嗯」了一聲。<br />「你臉色很差。」愈史郎看著她的側臉，「我聽說了，你用自己的身體去試藥。」<br />　此話一出，總算讓忍有所反應。眉頭不著痕跡的顫動了一下，她問：「⋯⋯誰告訴你的？」<br />「當然是你家的小姑娘。」愈史郎說了一個有跟沒有一樣的答案。<br />　小澄和菜穗看到忍的情況後也告知了小葵和香奈乎等人，儘管每個人紛紛向她勸說別這麼做，但忍畢竟是一家之主，對於她的不聽勸也是無能為力。<br />　所以才向蝶屋外的人尋求援助吧？忍猜想應該是香奈乎的主意。<br /><br />「你不需要操多餘的心，我自有分寸。」她冷冷的道。<br />「有嗎？我怎麼看不出來。」他語氣帶刺道，「我不相信你不知道自己的身體狀況&mdash;&mdash;你是在拿自己的命來賭、賭在你倒下之前做出解藥救富岡的命，我有說錯嗎？」<br />　儘管愈史郎語氣相當咄咄逼人，忍卻一個字都無法反駁&mdash;&mdash;因為他一語中的、說中了她的意圖。<br /><br />「不要干涉我的作法。」轉過頭忍強硬的說，「不管付出多少代價，我都要&mdash;&mdash;」<br />　就在轉頭之際、說話之間，冷不防的額頭被狠狠彈了一把，她吃痛的退開。<br />「你幹嘛！」忍摀住額頭，氣沖沖的說：「有什麼毛病啊你！」<br />　看起來比剛剛更一臉不爽，愈史郎道：「如果是以前的你，怎麼會輕易被我攻擊得手？可見你的狀況多差。」<br /><br />　這番話令忍啞口無言，撇過頭不想看他。<br />　經過了久久一陣安靜後，愈史郎才打破沈默。<br />「你是笨蛋嗎？」他毫不客氣的批著忍的頭說，「要是醫生本人因為藥物中毒死了，那病誰來治？」<br />「⋯⋯我又能怎麼辦？」忍的話語少了剛剛的怒氣，卻顯得更氣沮。<br />　只見愈史郎嘆了一口氣。<br />「如果你要做人體實驗的話，眼前不就有個比你自己更合適的對象？」<br />「⋯⋯！」<br /><br />　忍聞言抬起頭，驚訝的望著愈史郎。<br />　最初她一時還未意會到他這句話是什麼意思，冷靜下來思考後她才理解其中的涵義：愈史郎身為鬼，除了接觸到日光、藤花毒、日輪刀斬首之外，幾乎是不死之身，雖然遭受到致命攻擊仍有接近「死亡」的過程，但身體很快就會恢復再生。因此只要能得知多少劑量的配藥會令他如死亡般痛苦的話，就能有個極限值可做參考，這無疑是對忍的研究有相當大的幫助。<br /><br />「你願意做我的白老鼠嗎？」忍問道，聲音明顯變溫和了。<br />「我不是為了你，是為了炭治郎他們。而你是唯一可能救得了他們的人。」愈史郎有點彆扭的口吻道。<br />　這一刻忍突然覺得很想哭──在富岡倒下、送進醫院，到不死川來探望他後，她一直都陷在接近絕望的深淵，即使面對斑紋的後遺症她毫無頭緒且無助，每天仍必須打起精神強迫自己要撐下去、不停地研究再研究。<br />　因為如果今天她放棄了崩潰了，就意味著富岡或許再也不會醒來了。<br /><br />　但此刻她終於了解到自己並非孤立無援，她一直以來獨自一人沉溺在負面情緒的漩渦無法自拔、埋頭苦幹。而其實在她的身邊有很多人及資源能夠幫助她，只是她沒有發現、沒有試著去挖掘。<br /><br /><br />「愈史郎先生。」<br />　用充滿溫情的目光，忍凝視著眼前的善良之鬼。<br />「⋯⋯怎麼？」打了個哆嗦，愈史郎又被她看得起一身雞皮疙瘩。<br />「──你人好像也沒那麼差呢。」<br />　忍露出了有史以來對他的第一個善意微笑。<br />　而愈史郎啐了一聲。<br /><br />「說句謝謝很難嗎！」<br /><br /><br />＊＊＊<br /><br /><br />　是晚，忍做了一個夢。<br />　夢裡的她大約九、十歲，姊姊香奈惠和父母尚仍健在，一家四口過著幸福快樂的生活。<br />　然而有一天，她醒來後發現姊姊和爸媽都不見蹤影了。<br /><br />　她在家中的各處、每個房間找啊找，卻始終找不到心愛的家人。<br />　又氣又急的她跑到屋外，奔跑在大街小巷，她驚慌失措的尋找著、哭泣著。途中雖然有不少好心的路人上前來詢問狀況、甚至一起幫忙找人，但依舊一無所獲。<br /><br />　她茫茫然的走啊走著，不知何時走到了荒郊野外。最後她筋疲力盡、雙腳痠軟得一部也走不動了，絕望交加下，她蹲在路旁抱膝大哭。<br />　不知道哭了多久，忽然從頭上傳來一聲呼喚，讓她嚇了一跳。哭得太累太傷心了，連有人靠近都沒察覺。<br /><br />「──忍？」<br />　抬起頭，看見身前站了一個成年男子，年紀比爸媽來得輕，莫約二十上下吧？重點是，忍並不認識他，但對方卻知曉她的名字。<br />「你是誰？」她戒慎緊張的問，「為什麼知道我的名字？」<br />　男子思考沉吟了半晌後，回答：「我叫──」<br /><br />　夢境後續的部分，忍在夢醒後已經想不起來了。連男子的長相、聲音也完全沒有留下印象。她只記得她們好像一起經歷了一些事、去了一些地方──<br />　還有被懷抱時的那份溫暖。</p>
+
+<p><a href="bifurcation_21.html"><img src="arrow_next.png" width="100px" class="rotate"></a>(點此箭頭看下一章或 <a href="https://kissho.000webhostapp.com/kissho/index.html">回目錄頁</a>)</p>
+<br>
+<!--
+    <div id="sendmsg">
+        <p>&nbsp;</p>
+        <p>想說的話：</p>
+        <p>你的大名：<input type="text" id="sendname"/></p>
+        <p>你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom" value="_guest@gmail.com" /></p>
+    	<p>主題：<input type="text" id="sendsubject" value="關於這故事我想說..." size="30"/></p>
+    	想說什麼：<br><textarea id="sendContext" cols="50" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail" onclick="javascript:return sendmail()" value="send">送出</button>
+    </div>
+    <div id="sendmsg2">
+        <p>想說的話：</p>
+        你的大名：<input type="text" id="sendname_m"/><br>
+        你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom_m" value="_guest@gmail.com" /><br>
+    	主題：<input type="text" id="sendsubject_m" value="關於這故事我想說..." size="30" />
+    	<br>
+    	想說什麼：<br>
+    	<textarea id="sendContext_m" style="width:90%;" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail_m" onclick="javascript:return sendmail_mobile()" value="send">送出</button>
+    </div>
+    -->
+</div>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+			var msg = "確定要送出嗎？"; 
+			if (confirm(msg)==true){ 
+				var sender=document.getElementById("sendfrom").value;
+				var subject=document.getElementById("sendsubject").value;
+				var sendName=document.getElementById("sendName").value;
+				var context=document.getElementById("sendContext").value;
+				Email.send({
+					SecureToken:"0d2a5abf-d034-42e4-bb0e-5766beecdad6",
+					To:'yrrek9120@gmail.com',
+					From:sender,
+					Subject:sendName+':'+subject,
+					Body:context,
+				}).then(
+					message=>alert(message)
+				);
+			}else{ 
+				return false; 
+			} 			
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>from:<input type="text" id="sendfrom" value="guest@kissho.com" /></p>
+		<p>name:<input type="text" id="sendName" value="" /></p>
+		<p>subject:<input type="text" id="sendsubject" value="Some thinking about this episode" size="30" /></p>	
+		<textarea id="sendContext" cols="50" rows="5"></textarea>
+		<br>
+		<button id="sendmail" onclick="return sendmail()" value="send">send</button>
+	</div>
+</body>
+</html>

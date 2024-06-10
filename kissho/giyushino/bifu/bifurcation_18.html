@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>平行線的奇蹟〈十八〉</title>
+	<style type="text/css">
+		html {
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-text-size-adjust: 100%;
+		  text-size-adjust: 100%;
+		}
+		body{
+		    
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		}
+		p
+		{
+		max-height: 100%;
+		line-height: 1.8;
+		font-family: Arial;
+		 font-size: 11pt;
+		 font-style: normal;
+		}
+		.topic{
+			max-height: 100%;			
+			font-family: Arial;
+			 font-size: 14pt;
+			 font-style: normal;
+		}
+		#sendmsg{
+		    display:none;
+		}
+		#sendmsg2{
+		    display:block;
+		    -webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+		    
+		}
+		.explain{
+		    color: silver;
+		}
+		
+		/*大型桌機外觀*/
+	@media screen and (min-width: 1001px){/*裝置寬度大於1200px 從1201px開始*/
+	body{
+		    
+			-webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		    
+		}
+		#main{
+		    width:1000px;
+		    margin:0 auto;
+		    justify-content:center;   
+		}
+		.rotate{
+          -webkit-transform:rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        #sendmsg{
+		    display:block;
+		}
+		#sendmsg2{
+		    display:none;
+		}
+		.explain{
+		    color: silver;
+		}
+	}
+	</style>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+		    //alert('success');
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom").value;
+    			var subject=document.getElementById("sendsubject").value;
+    			var senderName=document.getElementById("sendname").value;
+    			var context=document.getElementById("sendContext").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom");
+		    a.value='';
+		    var b = document.getElementById("sendsubject");
+		    b.value='';
+		    var c = document.getElementById("sendname");
+		    c.value='';
+		    var d = document.getElementById("sendContext");
+		    d.value='';
+		}
+		function sendmail_mobile(){
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom_m").value;
+    			var subject=document.getElementById("sendsubject_m").value;
+    			var senderName=document.getElementById("sendname_m").value;
+    			var context=document.getElementById("sendContext_m").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom_m");
+		    a.value='';
+		    var b = document.getElementById("sendsubject_m");
+		    b.value='';
+		    var c = document.getElementById("sendname_m");
+		    c.value='';
+		    var d = document.getElementById("sendContext_m");
+		    d.value='';
+		}
+	</script>
+    
+</head>
+<body>
+    <div id="main">
+    <p class="topic">《平行線的奇蹟》章十八：眼淚</p><hr>
+<p>　她曾經以為從姊姊過世後，自己不會再經歷這種椎心刺骨之痛。<br />
+　儘管一路走來多少風風雨雨，但她終究獲得了心靈的平靜，在和平的世界與大家一切安好，這樣的日子彷彿可以一直持續下去。<br />
+　只是她沒料到，鬼所帶來的傷害遠遠大於她的想像，非人的遺毒侵蝕著她的周邊，像是未平息的怨念、至今仍纏著獵鬼人不放。</p>
+
+<p><br />
+＊＊＊</p>
+
+<p><br />
+　忍曾經聽禰豆子說過，在炭治郎被無慘附身時，大部分的人員包含柱們皆已死傷慘重、筋疲力盡，柱之中只有富岡堅持住傷痕累累的身軀、保持著理性和炭治郎斡旋。<br />
+　就算到今天為止，從忍的角度來看，富岡義勇的身影不論何時始終在她身旁屹立不搖。在決定目標後不會有任何迷惘、相信著他所相信的事物──連她都沒能相信的自己，富岡卻深信不疑。</p>
+
+<p>　那個她相信比誰都堅韌、如同大樹一般的背影，原來也有倒下的一天。</p>
+
+<p>　忍一聲聲呼喚著富岡的名字，可無論她怎麼搖晃拍打，後者依舊毫無回應。富岡尚有微弱的呼吸和脈搏，可是除此之外就沒有更多了。<br />
+　忍恐慌的叫喊驚醒了蝶屋其他人，眾人圍在兩人身旁、試著一同喚醒富岡，但一點用也沒有。大家七手八腳地幫忙把富岡抬進屋內，十萬火急地去請了鎮上的醫生來看看他的情況──然而經過各種初步診察後，醫生表示他也束手無策。</p>
+
+<p>　隔天一早，富岡依舊陷入沉睡狀態，絲毫沒有醒來的跡象。大夥請了鎮上其他的醫生來幫忙，可是每一個在做完全部的診斷後都毫無頭緒，只能兩手一攤。<br />
+　最後一位離開的老醫生在得知前面已經有眾多同業也對此症況無法可施時，語重心長的建議：「讓他到大醫院做個檢查吧。」</p>
+
+<p>　距離蝶屋最近的城鎮沒有醫院，只有診所。她們必須想辦法讓富岡到更遠的大城市、才有醫院能提供協助。蝶屋的成員都是個頭不高的女孩子，於是要搬運富岡就變成一件令人傷腦筋的事。即使能坐火車，要帶著他從蝶屋到車站、再移動醫院，仍是一個棘手的問題。<br />
+　於是忍只好斥資請人開一輛車到蝶屋來載富岡，儘管車資不菲，但錢對她來說不是問題──此時她才很難得的體現到手頭寬裕的幫助有多大。<br />
+　不過汽車的載客空間有限，所以除了富岡之外忍只帶著香奈乎隨行。</p>
+
+<p>　坐了幾個小時的車到達醫院後，接著送富岡去做一連串的精密儀器檢查，而這段期間忍和香奈乎只能在會客區等候。<br />
+　趁著等待時香奈乎詢問忍要不要買點什麼充飢？畢竟早上為了富岡的事忙碌到現在，都沒見忍進食過、甚至連水也沒喝。<br />
+「我沒有食慾。」輕輕搖搖頭，忍勉強擠出微笑：「香奈乎先吃吧、你今天應該也沒好好吃過東西吧？」<br />
+「姊姊⋯&zwnj;⋯&zwnj;」香奈乎心疼的說：「還是多少吃一點吧、不然你身體也撐不住的⋯&zwnj;⋯&zwnj;」<br />
+　忍仍是搖頭，表示沒有意願吃任何東西。<br />
+　儘管忍堅持說不餓，但香奈乎最後還是帶了茶水、飯糰和金平糖回到醫院。<br />
+「姊姊，吃點糖吧。」香奈乎將水和糖果遞到忍的手中，如果吃不下飯糰、那至少攝取一點糖份也好──了解到妹妹的用意，忍才總算吃了些糖果和飲水。</p>
+
+<p>　又過了一個小時後，兩個護士從房間推出了病床，躺在上頭的正是昏迷不醒的富岡。忍和香奈乎趕緊迎上前，而最後跟在床尾出現是一位身著白袍、帶著眼鏡的中年男子。<br />
+「你們是他的家屬嗎？」看起來應該是醫生的男子向姊妹倆問道。<br />
+「是的。」忍回答，「請問，富岡先生他究竟怎麼了？」<br />
+　進行了大半天的檢查、總該有個結論吧，雖迫不及待想知道答案，卻又害怕會聽到不好的消息。<br />
+　沒想到居然見醫生搖搖頭嘆了口氣，緩緩道：「很抱歉，我也不知道他出了什麼問題。」<br />
+　忍怔在原地，好一會兒說不出話，以為自己聽錯了。<br />
+「⋯&zwnj;⋯&zwnj;您說不知道什麼問題，到底是⋯&zwnj;⋯&zwnj;」香奈乎代替姊姊發問，「可以說明一下嗎？」<br />
+「唉⋯&zwnj;⋯&zwnj;」醫生又嘆了一次氣，「先去病房吧。」</p>
+
+<p>　姊妹倆跟著富岡的病床、兩位護士和醫生進入個人病房，將床頭靠在牆面並且將點滴掛好後，護士們便先行退出病房了，只留下兩個女孩和醫生。</p>
+
+<p>「我們幫富岡先生做了很多檢查、抽血、X光等等能測的都測過了，就是找不出任何明顯的症狀去推斷他的身體是何種問題──除了他的生理機能比正常人虛弱、但也只是在標準值的邊緣，還不到異常的程度。」醫生低沉的嗓音解釋著。<br />
+「您的意思是⋯&zwnj;⋯&zwnj;他目前就像是一個睡著的一般人，是嗎？」忍的聲音巍巍顫顫。<br />
+「從數據上看來，是。」推了一下眼鏡，醫生說：「我建議讓他先留院觀察幾天看看。」<br />
+「⋯&zwnj;⋯&zwnj;我知道了⋯&zwnj;⋯&zwnj;」</p>
+
+<p>　不忘囑咐她們記得去辦住院手續後，醫生便離開病房了。</p>
+
+<p>「香奈乎⋯&zwnj;⋯&zwnj;你先回去吧。」<br />
+　忍低聲向妹妹說，而後者驚訝：「姊姊不一起嗎？」<br />
+「我想先待一晚，說不定這段期間富岡先生就醒了。」忍苦笑道，「如果他醒來發現自己在陌生的地方，總要有個人跟他說下情況。」<br />
+「⋯&zwnj;⋯&zwnj;好吧。」先不論富岡到底會不會很快清醒，但香奈乎能夠理解忍想要陪在他身邊的心情，於是也不強求她回家。</p>
+
+<p>「那我先走了。」<br />
+「嗯，路上小心。」<br />
+　她們互相道別後，最後病房內只剩下忍和富岡。<br />
+　拉了張椅子在病床旁坐下，她凝視著床頭的睡顏──他的呼吸微弱且悠長，表情安穩看似無病無痛，看上去真的就像剛剛說的：只是一個睡著的普通人。</p>
+
+<p>「富岡先生，醫生說你沒病呢。」忍的語氣帶了點責備，「既然沒病，為什麼不快點醒來？」<br />
+　想當然爾富岡是聽不見這番話的，她也知道富岡絕不可能沒病，只是醫院檢查不出來。<br />
+　她伸出雙手輕輕包住了富岡僅剩的左手，既粗糙又佈滿傷疤的手。<br />
+「你都拼命從無慘手下活下來了，怎麼能在這時候倒下？」她愈說愈憤慨，「富岡義勇，你有在聽嗎！」<br />
+　忍覺得好生氣，但氣的不是富岡，而是她自己──她是鬼殺隊最優秀的醫療人員、甚至打敗無慘的毒藥也是有她協助研發的。可是如今的她居然完全對富岡的狀況毫無頭緒、無計可施。難道研究藥理這麼多年都是白費了嗎！她痛心疾首。</p>
+
+<p>　再仔細端詳他，忍注意到他的上身沒有她印象中那樣壯實了、臉似乎也消瘦了點，她這才想起先前幫他更衣繫腰帶時富岡確實瘦得有些明顯，但那時他只是說自己沒在動吃得少的緣故，因此她也沒有放在心上：現在回想起來，一切好像都有跡可循──</p>
+
+<p>「明明早就要察覺的⋯&zwnj;⋯&zwnj;！」忍緊咬雙唇，「我到底都在幹嘛⋯&zwnj;⋯&zwnj;！」<br />
+　嘴巴咬破了一個洞，她嚐到血液的金屬味，卻渾然不感覺痛。小春離世當下的感受再次從心中湧現，胸口窒礙得令人難以呼吸──她又錯失了一次預防意外發生的機會。</p>
+
+<p>「對不起⋯&zwnj;⋯&zwnj;真的很對不起⋯&zwnj;⋯&zwnj;」</p>
+
+<p>　她緊握著富岡的手，一次又一次的道著歉。</p>
+
+<p><br />
+＊＊＊</p>
+
+<p><br />
+　不知不覺趴在床上睡著的忍突然自睡夢中驚醒，下意識望向病床的床頭，而富岡的姿勢跟前一晚一模一樣，也就是說他完全沒有醒來過。<br />
+　她轉而看向窗戶，外頭一片明亮，時間已經是隔天早上了。</p>
+
+<p>　接著過沒多久病房外響起敲門聲，門被緩緩地推開。<br />
+「打擾了⋯&zwnj;⋯&zwnj;」怯生生的出聲打招呼的是蝶屋的小清，「忍大人，早。」<br />
+「嗯⋯&zwnj;⋯&zwnj;早⋯&zwnj;⋯&zwnj;」快速的用手指抹去昨晚的淚漬，忍問道：「小清，怎麼來了？」<br />
+「那個、小葵姊和香奈乎姊說讓我來照看富岡大人，請忍大人先回蝶屋休息⋯&zwnj;⋯&zwnj;」<br />
+「唔⋯&zwnj;⋯&zwnj;」<br />
+　儘管忍一刻也不想離開，但想起小葵因為之前她受到小春奶奶去世的影響、已經在藥房連續值班好一段日子了，加上香奈乎平時白天要上課，能幫忙的有限──不能再讓小葵一個人撐著藥房了，她心想。</p>
+
+<p>「──那這裡就拜託你了，小清。」忍站起身說道。<br />
+「嗯！我知道了！」小清用力的點了點頭。<br />
+　把富岡交給小清照護後，忍才依依不捨的離開醫院，踏上回歸蝶屋的路途。</p>
+
+<p><br />
+　回到蝶屋梳洗一番、迅速用過早飯後，忍立刻前往藥房去替小葵的班。<br />
+「忍大人！您怎麼來了？」見自家主人出現在藥房，小葵緊張的說：「昨天折騰了一天，您應該在家好好休息才對。」<br />
+「我沒事。」忍擺了擺手，「而且辛苦的不是我⋯&zwnj;⋯&zwnj;小葵，你也值班幾個禮拜了，最辛苦的其實是你。」<br />
+「忍大人⋯&zwnj;⋯&zwnj;」<br />
+「對不起，我居然頹廢了這麼多天，你應該很累了吧？快回去休息吧。」<br />
+　面對忍的催促，雖然一方面禁不起她的好意、但小葵還是彷彿如釋重負般，忍不住鬆垮了這幾天一直緊繃的雙肩。<br />
+「那、我先走了──」終於不再堅持的小葵說：「也請您別太勉強自己了。」<br />
+「嗯，我會的。」忍微微頷首，要她不用擔心。</p>
+
+<p>　送走小葵後，忍強迫自己把心思從富岡的事抽離，暫時專注在工作上。<br />
+　既然目前的她對富岡的症狀無能為力、那就先交給專業的醫院去處理。</p>
+
+<p>　下午，香奈乎自學校歸來，看到忍在藥房相當驚訝：「忍姊姊！您怎麼不在家休息？」<br />
+「你們真的是會把我慣壞。」忍不禁苦笑，「你忘了嗎？我已經因為小春奶奶的事休息很久了。」<br />
+「是這樣，可是⋯&zwnj;⋯&zwnj;」雖然小春和富岡的事對大家的心情都有所影響，但打擊最大的無疑是忍，這兩人對她而言是何等重要的存在，尤其是富岡──<br />
+　面臨這種情況，每個人都有自覺要多分擔一點：就算精神上無法給予忍太大的幫助，只能物理上盡可能減輕她的負擔。<br />
+　不過確實這也是可預見的會發生的狀況──忍絕對不會因為私人情緒造成旁人的困擾、即使自己有多痛苦，她仍舊會優先照顧別人的情緒和想法。所以她才會在這裡，而不是在蝶屋。<br />
+「不回蝶屋真的沒關係嗎？」忍不住的、香奈乎向姊姊再確認一次。<br />
+「嗯，今天讓我待在這。」忍低聲說：「拜託──」<br />
+　如果不讓自己轉移注意的話，大概是一刻也無法忍受吧？不是藥房、也不是蝶屋，而是百里之外的那個人身邊。</p>
+
+<p>　或許是這樣的想法也傳達給香奈乎了，她心領神會的望著忍。</p>
+
+<p>「好的。」香奈乎最後道。</p>
+
+<p><br />
+＊＊＊</p>
+
+<p><br />
+　幾天後消息很快便傳遍了親友圈，聞訊的每個人無不抽空到醫院去探望富岡。<br />
+　不僅是炭治郎他們，連曾經的同僚宇髓和其妻妾們、鬼殺隊最後一任首領產屋敷輝利哉、富岡的導師鱗瀧左近次都特地來醫院探視富岡的狀況。</p>
+
+<p>　然而不管有多少會面，富岡始終沒有醒來接待過任何一人。</p>
+
+<p>　而忍恢復了正常的值班時間，但晚上藥房打烊、回蝶屋吃過飯後她一定會在閉院前趕去醫院過夜，平時沒值班的時候也幾乎待在富岡的病房內。<br />
+　就這樣過了一個禮拜後，醫院決定再幫富岡安排一次完整的檢查、看看身體有無任何異常。<br />
+檢查的前一天忍恰巧沒有值班，便在中午過後來到病房。</p>
+
+<p>　正當她望著窗外的街景心不在焉的放空時，病房響起了敲門聲。<br />
+　於是她走上前推開門，然後眼前出現了意想不到的人物──</p>
+
+<p>「喲。」來者一頭白髮、臉上幾道怵目驚心的巨大傷疤增添凶神惡煞之感，他抬起手簡單打了招呼，傷痕累累的手掌上只有三根指頭：「好久不見。」<br />
+「不、不死川先生⋯&zwnj;⋯&zwnj;！」忍驚呼道。</p>
+
+<p>　來訪的是最後一任風柱、也是忍和富岡從前的同僚之一，不死川實彌。<br />
+　不死川在鬼殺隊解散後、在沒有向任何人交代他的行蹤之下默默地消失了，誰也不知道他上哪去了。<br />
+　儘管人是不知所蹤，但藉由鎹鴉還是能聯絡得上他，所以倒也沒什麼大礙。<br />
+　可能是宇髓或輝利哉讓鎹鴉傳送口信給不死川了吧？忍心想。但身為曾經最討厭富岡的同僚之一，即使最後關係已經緩和許多，不死川會來探望富岡的舉動還是令她相當驚訝。</p>
+
+<p>「真的是、好久不見了⋯&zwnj;⋯&zwnj;」忍向他問道：「最近還好嗎？」<br />
+「還行吧。」不死川輕描淡寫道。<br />
+　忍領著他走到病床旁，後者安靜地看著床上曾經的同僚，淡淡的問道：「這傢伙呢？怎麼了？」<br />
+　黯淡了眼神，忍聲音頹喪：「不知道⋯&zwnj;⋯&zwnj;醫院查不出來，明天還要再做一次檢查⋯&zwnj;⋯&zwnj;」<br />
+　不死川沒說什麼，只是情緒複雜的注視著沉眠的富岡，現場陷入了一片不安的沉默。</p>
+
+<p>　過了幾分鐘，不死川略帶感慨的開口：「⋯&zwnj;⋯&zwnj;沒想到你居然先倒下了啊，富岡。」<br />
+「⋯&zwnj;⋯&zwnj;咦？」<br />
+　不死川的話語似乎藏了玄機，忍轉過頭看向他：「不、不死川先生，這話是什麼意思⋯&zwnj;⋯&zwnj;？」<br />
+「記得主公大人、應該說前任主公‧產屋敷耀哉曾跟我們柱說過斑紋的事嗎？」不死川侃侃道來，「只要身上顯現斑紋的人，都活不過二十五歲，那位大人是這麼說的。」<br />
+「等等、你的意思是⋯&zwnj;⋯&zwnj;你是說⋯&zwnj;⋯&zwnj;你和富岡先生⋯&zwnj;⋯&zwnj;難道都出現斑紋了嗎！？」忍的語氣驚恐、劇烈顫抖。<br />
+「原來你不知道啊⋯&zwnj;⋯&zwnj;」不死川苦澀一笑，「他倒是隱瞞得很好。」<br />
+　他這兩句說得很輕，但聽在忍的耳裡卻彷彿劈雷，轟得她陣陣耳鳴、腦袋暈眩天旋地轉。<br />
+　原本以為醫院束手無策已經是相當糟糕的狀況了、想不到現在竟然發展成更令人絕望的事態──</p>
+
+<p>　忽然一個雙腳發軟、忍身軀搖搖欲墜，把不死川嚇了一跳。<br />
+「喂！沒事吧？胡蝶！」他趕緊伸手穩住她的肩膀。<br />
+「不死川先生⋯&zwnj;⋯&zwnj;這是真的嗎？富岡先生他⋯&zwnj;⋯&zwnj;」<br />
+　她的語氣如此脆弱不堪，令不死川又受到一次衝擊──他這才明白忍和富岡之間似乎有非比尋常的關係。<br />
+「那個、也說不準啦⋯&zwnj;⋯&zwnj;可能我猜錯了！也許明天做完檢查發現是其他問題啊！」不死川趕緊否定剛剛的說詞，想藉此安撫她。<br />
+　聽到這番話的忍似乎也稍微冷靜下來了，喃喃說著：「是啊、說不定明天就有結果了⋯&zwnj;⋯&zwnj;」</p>
+
+<p>　之後不死川又笨拙地說了幾句安慰的話，想試著穩定忍的情緒。<br />
+　無奈忍其實沒怎麼在聽他說話，但她確實感受到了他的善意，這點已足夠感激了。<br />
+　聊著聊著逐漸接近閉院時間，於是不死川向忍簡短話別後便離開了醫院。</p>
+
+<p>　病房內又只剩下忍和富岡。</p>
+
+<p><br />
+「為什麼──」<br />
+　趴在富岡身旁，她哽咽著口吻：「為什麼──為什麼你都不告訴我呢──」</p>
+
+<p>　她曾經以為姊姊過世後，自己不會再經歷這種椎心刺骨之痛。<br />
+　原來這些年來以為早已流乾的眼淚，其實只是在等待下一次的撕心裂肺。<br />
+&nbsp;</p>
+<p><a href="bifurcation_19.html"><img src="arrow_next.png" width="100px" class="rotate"></a>(點此箭頭看下一章或 <a href="https://kissho.000webhostapp.com/kissho/index.html">回目錄頁</a>)</p>
+<br>
+<!--
+    <div id="sendmsg">
+        <p>&nbsp;</p>
+        <p>想說的話：</p>
+        <p>你的大名：<input type="text" id="sendname"/></p>
+        <p>你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom" value="_guest@gmail.com" /></p>
+    	<p>主題：<input type="text" id="sendsubject" value="關於這故事我想說..." size="30"/></p>
+    	想說什麼：<br><textarea id="sendContext" cols="50" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail" onclick="javascript:return sendmail()" value="send">送出</button>
+    </div>
+    <div id="sendmsg2">
+        <p>想說的話：</p>
+        你的大名：<input type="text" id="sendname_m"/><br>
+        你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom_m" value="_guest@gmail.com" /><br>
+    	主題：<input type="text" id="sendsubject_m" value="關於這故事我想說..." size="30" />
+    	<br>
+    	想說什麼：<br>
+    	<textarea id="sendContext_m" style="width:90%;" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail_m" onclick="javascript:return sendmail_mobile()" value="send">送出</button>
+    </div>
+    -->
+</div>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>平行線的奇蹟〈二十一〉</title>
+	<style type="text/css">
+		html {
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-text-size-adjust: 100%;
+		  text-size-adjust: 100%;
+		}
+		body{
+		    
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		}
+		p
+		{
+		max-height: 100%;
+		line-height: 1.8;
+		font-family: Arial;
+		 font-size: 11pt;
+		 font-style: normal;
+		}
+		.topic{
+			max-height: 100%;			
+			font-family: Arial;
+			 font-size: 14pt;
+			 font-style: normal;
+		}
+		#sendmsg{
+		    display:none;
+		}
+		#sendmsg2{
+		    display:block;
+		    -webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+		    
+		}
+		.explain{
+		    color: silver;
+		}
+		
+		/*大型桌機外觀*/
+	@media screen and (min-width: 1001px){/*裝置寬度大於1200px 從1201px開始*/
+	body{
+		    
+			-webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		    
+		}
+		#main{
+		    width:1000px;
+		    margin:0 auto;
+		    justify-content:center;   
+		}
+		.rotate{
+          -webkit-transform:rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        #sendmsg{
+		    display:block;
+		}
+		#sendmsg2{
+		    display:none;
+		}
+		.explain{
+		    color: silver;
+		}
+	}
+	</style>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+		    //alert('success');
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom").value;
+    			var subject=document.getElementById("sendsubject").value;
+    			var senderName=document.getElementById("sendname").value;
+    			var context=document.getElementById("sendContext").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom");
+		    a.value='';
+		    var b = document.getElementById("sendsubject");
+		    b.value='';
+		    var c = document.getElementById("sendname");
+		    c.value='';
+		    var d = document.getElementById("sendContext");
+		    d.value='';
+		}
+		function sendmail_mobile(){
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom_m").value;
+    			var subject=document.getElementById("sendsubject_m").value;
+    			var senderName=document.getElementById("sendname_m").value;
+    			var context=document.getElementById("sendContext_m").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom_m");
+		    a.value='';
+		    var b = document.getElementById("sendsubject_m");
+		    b.value='';
+		    var c = document.getElementById("sendname_m");
+		    c.value='';
+		    var d = document.getElementById("sendContext_m");
+		    d.value='';
+		}
+	</script>
+    
+</head>
+<body>
+    <div id="main">
+    <p class="topic">《平行線的奇蹟》章廿一：曙光</p><hr>
+<p>　富岡揹著忍從郊外沿著路尋尋覓覓，漸漸的路上的行人和房子愈來愈多，最後他們回到了熱鬧的市街上。<br />
+　雖然有其他人可以打探消息是很好，但路人實在太多了，一時之間富岡反而有點不知從何開始問起。</p>
+
+<p>「你知道你爸媽平常會去哪些地方嗎？」他轉頭向背上的忍問道，而忍點了點頭：「知道。」<br />
+　於是在忍帶路下，富岡一間一間的上門詢問是否有人有她的父母和姊姊的下落。<br />
+　儘管每一戶人家對忍的遭遇表示同情，可是卻沒有任何一人知道他們去了哪裡、在做什麼。<br />
+無計可施之下，富岡只好帶著忍往人多的地方去打聽消息，例如菜市場或飯館之類的。<br />
+　可惜的是卻仍一無所獲。</p>
+
+<p>　如此四處奔波、折騰下來一天也將近尾聲了。</p>
+
+<p>「天色開始暗了。」富岡看著由橘轉藍的天空，「明天再繼續找吧，我先送你回家。」<br />
+「嗯⋯⋯」忍低低的應了一聲，聽起來相當沮喪。<br />
+「別擔心，他們應該沒事的。」富岡安慰她──雖然他不確定在這個時空背景下，忍的父母姊姊是否仍健在。<br />
+　忍沒有回答，心情似乎還是很低落。<br />
+　富岡想稍微讓她打起精神轉移注意力，於是便開了另一個話題：「你的姊姊是什麼樣的人？」<br />
+「香奈惠姊姊？」聽到關於姊姊的問題，忍一掃陰霾、語氣一振：「她是一個大美人喔！」<br />
+「很漂亮嗎？」富岡接著她的話問道，雖然他本來就知道香奈惠的長相、她的花容月貌在鬼殺隊中十分出名，這也是不容置疑的。<br />
+「何止是漂亮，根本就是國色天香！」忍神氣十足道，「說是全鎮第一美女也不為過！」<br />
+　她的口氣毫不掩飾對姊姊的崇拜啊，富岡心想、然後忍不住揚起嘴角。<br />
+「笑什麼啦！我說的是真的！」忍以為富岡在笑她誇大，更加用力地描述：「而且我姊姊腦筋很好，什麼事都難不倒她！彈琴、插花、泡茶、料理無一不精，鎮上的男人都很迷戀她呢！」<br />
+「不，我不是不相信你，只是你真的很喜歡姊姊呢。」富岡笑著說。<br />
+「姊姊很棒啊，我也想變得跟她一樣厲害。」忍大聲的說，「如果你看到我姊姊本人，一定也喜歡上她的。」<br />
+「嗯⋯⋯這不好說⋯⋯」富岡回憶起他們第一次相見的時候：香奈惠確實很美，溫柔婉約、談吐優雅、舉手投足間都自帶一股不凡的氣質，他完全可以理解眼前的同僚為何會變成隊士間的話題人物。<br />
+　可是在他離開蝶屋後，他印象深刻的反而是跟在香奈惠旁邊的嬌小少女──她總是豎著橫眉、自帶一股倔強不屈。開心就笑、生氣就罵，直接而不拐彎抹角的情緒。即使面對和姊姊年齡相仿的前輩，她也不改這份率真。</p>
+
+<p>　就如眼前的她一樣。</p>
+
+<p>「不好說？」忍瞪大雙眼驚訝的道，「還是你有喜歡的人了？才對我姊姊沒興趣。」<br />
+　雖然有點被她大剌剌的問句嚇到，但富岡仍舊面不改色的回答：「嗯、是啊。」<br />
+「欸──」聽他這麼說，挑起了忍的好奇心：「她也很漂亮嗎？」<br />
+「嗯⋯⋯」富岡想了一下，笑說：「我覺得她應該不會輸你姊姊。」<br />
+「怎麼可能！」忍發出了反駁之聲，「我才不相信！而且你說，她有我姊姊這麼聰明什麼都會嗎？」<br />
+「這個⋯⋯我覺得她也懂很多啊，至少比我強多了。」富岡帶著敬佩的口吻道。<br />
+「唔──」忍噘著嘴，似乎仍不相信世界上有比姊姊更好的女孩，但還是忍不住問：「那她是個什麼樣的人？」</p>
+
+<p>「跟你很像。」富岡答道。<br />
+「我？跟我很像？」忍感到奇怪。<br />
+「嗯。」<br />
+「跟我很像的、一位也長得很漂亮的姊姊？」<br />
+「差不多是這個意思吧。」她好像在說別人的事，富岡不禁覺得有趣。<br />
+「哦──」<br />
+「而且她也有個姊姊。」<br />
+「這麼剛好？」大概是對「她」的談論有點膩了，忍轉移話題：「那你呢？你爸媽呢、有兄弟姊妹嗎？」<br />
+「過世了。」富岡淡淡的道，「父母和姊姊都走了。」<br />
+　忍不禁「啊」了一聲，接著馬上道歉：「對不起，我不是故意要──」<br />
+「沒關係。」富岡並不介意，「他們離開很多年了。」<br />
+「那你只剩下她了嗎？你喜歡的那個女生。」<br />
+　眼前的少女每一次提問都很直接犀利，讓富岡有些招架不住。<br />
+「也沒有那麼糟，我還有朋友──」他想起了蝶屋的女孩們，補上一句：「也有家人。」<br />
+「你不是說你爸媽和姊姊都過世了嗎？」忍不解的問。<br />
+「不一定有血緣關係才是家人。」富岡耐心的解釋，「家族可以有很多形式的。」<br />
+「──是這樣嗎？」<br />
+　忍歪著頭道，但富岡也不求她馬上就能理解，畢竟眼前的女孩尚且年幼、涉世未深。<br />
+　聊著聊著，兩人到了一座稍具規模的宅子，門口掛著「胡蝶」的名牌。</p>
+
+<p>「這裡就是我家。」忍向富岡說道，然後迫不急待地從他背上跳下來，打開門衝進去：「爸爸！媽媽！姊姊！」<br />
+　她在玄關大喊，可是屋內沒有任何回應，悄然無聲。<br />
+　富岡走到玄關，望著期待落空、一臉快哭出來的忍，他靠過去伸手摸摸她的頭：「先進去休息吧，這麼晚了，說不定他們一時也趕不回來。」<br />
+「⋯⋯是嗎⋯⋯」忍低下頭，落寞的脫了鞋踩上木頭地板。<br />
+　目前的事態也不可能丟下她不管，於是富岡也跟著脫鞋入內。</p>
+
+<p>　雖然心情低落，但忍還是盡地主之誼、迎賓入座，招待他享用一頓晚餐。富岡邊吃著菜，不禁佩服小小年紀的她儼然已有不錯的手藝，甚至比身為成年人的他還懂得料理。<br />
+「很好吃。」咀嚼著其中一道涼拌山菜，富岡讚嘆。<br />
+「這只是一些很簡單的菜啦。」被稱讚的忍似乎有點彆扭，「如果是姊姊或媽媽，就會做更好吃的。」<br />
+「這樣已經很好了。」富岡回答。好久沒用兩隻手吃飯，久違的便利好像讓飯更好吃了、他心滿意足地想。<br />
+「富岡先生喜歡吃什麼啊？天婦羅？炸雞塊？還是煎蛋嗎？」忍好奇的問，而富岡幾乎是一秒回答：「鮭大根。」<br />
+「鮭大根？」<br />
+「嗯。」<br />
+　忍驚訝的「欸──」了一聲，大概是很少聽到有人是這個答案：「鮭大根喔⋯⋯」<br />
+　但其實除了鮭大根之外，富岡並不怎麼挑食，而蝶屋的孩子手藝都不差，在伙食方面他覺得他吃得都很好。<br />
+「如果你喜歡，明天就做給你吃吧。」忍直接了當的說，而富岡的開心也顯露得十分直接明白，讓她忍不住笑出來。<br />
+「你呢？喜歡吃什麼？」富岡反問，然後突然發現他從來沒有問過忍這個問題。從過去相處的幾年他大約模糊的了解忍在吃哪些東西時是開心的、但他並不知道對她來說有哪一道菜或是食物是像鮭大根之於他的地位那樣。</p>
+
+<p>「生薑佃煮！」忍神采奕奕的回答，「我媽做的生薑佃煮、時雨煮超好吃的！」<br />
+「哦──」是很家常的小菜啊，富岡心想。不曉得做法難不難？他不動聲色的記住這個情報，想著哪時候回去再請教誰──如果有機會回去的話。</p>
+
+<p>　用過晚餐後，富岡負責幫忙清洗了碗盤、還替忍燒了洗澡水。<br />
+　本來富岡還在思考是否留下來過夜、或是在鎮上找一間旅店投宿，不過忍似乎很希望他留下來、連換洗衣物都幫他準備好了（雖然是爸爸的睡衣）。<br />
+「富岡先生本來是要來做什麼的啊？」她想到從在路上遇到富岡後、他今天一整天一直陪在她身邊，「今天這麼麻煩你，有耽誤了行程嗎？」<br />
+「沒有、其實我⋯⋯也在找⋯⋯」如果說自己在找「脫離這個世界的方法」聽在她耳中應該很詭異吧、但他又很難解釋自己的真實目的⋯⋯<br />
+「你在找那個女生嗎？她跟你走散了嗎？」忍接過他的話問道。<br />
+「唔⋯⋯嗯⋯⋯算是、吧⋯⋯」他含糊點頭。反正也無從說起，乾脆就將錯就錯了。<br />
+「原來我們同病相憐呢。」忍愧疚地說：「富岡先生一定也很著急吧？對不起啊，還拉著你陪我找人。」<br />
+「總不能放著哭泣的孩子在路邊不管吧。」富岡溫和的說，「我的事可以先緩緩，不急。」<br />
+「⋯⋯謝謝你，富岡先生。」<br />
+　既感激又感動的、忍捱近他，拉著他的手。</p>
+
+<p>「等找到我爸媽和姊姊後，我們再一起去找那個女生吧！」她語氣真誠地說。</p>
+
+<p><br />
+＊＊＊</p>
+
+<p><br />
+「總算是過來做身體健康檢查了。」從桌上的插著滿滿器具的筒中拿出壓舌棒，「來，張嘴。」<br />
+「啊──」坐在忍面前的金髮少年聽話地打開嘴巴，隨即感覺到一根冷硬的金屬板進入口腔翻攪一番，搞得他有點噁心。<br />
+　雖然剛剛的語氣在一般人聽來是好聲好氣的，但他異於常人的聽覺馬上就可以分辨出忍在氣頭上。她生氣也不是沒有原因的──她不時三催四請要他定期來健檢、可他就是固執地不肯來蝶屋。</p>
+
+<p>「真是沒用啊、紋逸。」另一個帶著豬頭面具的少年‧嘴平伊之助。盤腿坐在診療間的床上，一副看好戲的樣子對著金髮少年說。<br />
+「還敢說我！你上次喉嚨痛的時候不也是心不甘情不願的被架過來的嗎！」口腔檢查一結束，「紋逸」立刻大聲嗆回去：「還有你到底什麼時候才會記得我叫什麼名字啊、受不了。」<br />
+「善逸君。」<br />
+「是！」<br />
+「衣襟拉開，我要聽你的心跳。」<br />
+「好好好的。」<br />
+　原本還在跟伊之助鬥嘴的金髮少年‧我妻善逸，忍一說話馬上就乖乖閉嘴、一個口令一個動作。不僅是善逸，連看上去桀驁不馴的伊之助在忍面前也不太敢造次，就知道他們有多敬畏忍。<br />
+　聽完了心跳和呼吸、確定善逸的心肺健康無礙後，忍拿下聽診器、收進了抽屜。</p>
+
+<p>「腳的狀況還好嗎？」她問道。善逸的腳有舊疾，每當天氣濕冷就會發疼。<br />
+「唔⋯⋯跟之前差不多吧，沒有更差、也沒有更好。」善逸老實的回答，就算想裝也很難瞞過忍的眼睛。<br />
+　長年四處征戰和最後無慘一役留下的傷害，幾乎在每個獵鬼人身上都有，只是多和少程度上的差別：例如炭治郎的右眼和左臂、善逸的腳、富岡的右臂、宇髓的左眼和左臂、不死川的手指、香奈乎的右眼等等。而除了肉體或外表可見的部分之外，曾出現斑紋的人還得承受減壽的後遺症。</p>
+
+<p>　忍微微頷首：「那就跟之前一樣，我請小葵幫你熬一碗活血強筋的藥，喝完就可以回去了。」<br />
+　一聽到這句話善逸頓時面有菜色，冷汗直冒──那碗藥正是他不想來蝶屋做檢查的原因。儘管忍在醫治病人時的態度都很溫柔體貼，下藥的時候卻完全不是那回事，完全奉行「良藥苦口」的原則。</p>
+
+<p><br />
+　剛剛開始都沒怎麼說話的伊之助，突然脫口問了一句：「半半羽織人呢？」<br />
+　這句話讓善逸嚇得連忙使眼色要他閉嘴、但伊之助怎麼可能看得懂呢。所以他又接著問：「他還沒醒來嗎？」<br />
+　原本專注在書寫的忍停下了動作，沒有說話、也沒有轉頭，只是靜止在桌前。<br />
+　而離她最近的善逸感受到了一股龐大且低迷的氣氛、令他近乎喘不過氣，卻又無法逃離。</p>
+
+<p>「嗯。」忍淡淡地回應，「『暫時』還沒醒。」<br />
+　儘管有珠世的書和愈史郎的協助，期間她也成功配出幾款不同的藥方讓富岡服下，但也不知道究竟是藥效發揮太慢呢、或是根本沒效？總之目前似乎只能停滯在這樣不上不下的階段。<br />
+「忍不是有藥可以救他嗎？」伊之助不解的問，「之前紋逸和炭治郎去找的傢伙，不就是被你的藥救回來了？」<br />
+　聽著他說的一字一句讓忍感到困惑、丈二金剛摸不著頭腦：「──我的藥？」看向善逸、他也是一頭霧水的樣子。<br />
+「那個叫做三島還是水島的傢伙啊！他不是說救他的人叫『胡蝶』、那不就是忍嗎？」見在場兩人都一臉狀況外的樣子，伊之助忍不住有點著腦：「你們記性太差了吧！」<br />
+「齁⋯⋯白癡喔！他說那個人叫『五條（Gojo）』不是『胡蝶（Kocho）』！」總算理解他所指何事，善逸一副很受不了的口氣道：「而且那是他曾祖父發生的事，就算真的剛好也姓胡蝶，想也知道那不可能是忍小姐吧又不是妖怪活那麼久還⋯⋯」<br />
+「──你說什麼？」<br />
+「咿！對不起對不起！我不是說忍小姐你是妖怪的意思，只是打個比方──」<br />
+　聽到忍突然站起身問、還以為是對他說她是妖怪的部分生氣了，善逸嚇得魂飛魄散、不住道歉。<br />
+「不是那個。」但顯然她並非針對妖怪的事，「你一開頭說的那句？」<br />
+「呃、白、『白癡喔』？」善逸結結巴巴的回答。<br />
+「不是那句！再下一句！」<br />
+「對對對不起！呃⋯⋯呃⋯⋯下一句是、『他說那個人叫五條不是胡蝶』？」<br />
+「對、是這句⋯⋯！」她的聲音有壓抑不住的激動，「叫五條不是胡蝶、叫三島還是水島⋯⋯」<br />
+　從兩個少年的對話中、好像隱藏了什麼至關重要的線索，她忍不住在室內來回踱步、口中念念有詞。<br />
+「三島（Mishima）、水島（Mizushima）⋯⋯三島、水島⋯⋯五條、胡蝶⋯⋯五條、胡蝶⋯⋯啊！」</p>
+
+<p>　終於想起這個眼熟的名字在哪見過了⋯⋯！<br />
+　衝到書櫃旁邊、有一堆前陣子從倉庫整理出來的舊書，她從其中拿出了上次被她隨意翻看後便放置不管的、那本字跡潦草的手記本，然後再度打開──</p>
+
+<p>「在這裡⋯⋯」</p>
+
+<p>　上天彷彿開了她一場大玩笑。<br />
+　汲汲營營、嘔心瀝血渴求的解藥，在世界上距離她最近的地方、結果她居然一直沒有發現。<br />
+&nbsp;</p>
+<p><a href="bifurcation_22.html"><img src="arrow_next.png" width="100px" class="rotate"></a>(點此箭頭看下一章或 <a href="https://kissho.000webhostapp.com/kissho/index.html">回目錄頁</a>)</p>
+<br>
+<!--
+    <div id="sendmsg">
+        <p>&nbsp;</p>
+        <p>想說的話：</p>
+        <p>你的大名：<input type="text" id="sendname"/></p>
+        <p>你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom" value="_guest@gmail.com" /></p>
+    	<p>主題：<input type="text" id="sendsubject" value="關於這故事我想說..." size="30"/></p>
+    	想說什麼：<br><textarea id="sendContext" cols="50" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail" onclick="javascript:return sendmail()" value="send">送出</button>
+    </div>
+    <div id="sendmsg2">
+        <p>想說的話：</p>
+        你的大名：<input type="text" id="sendname_m"/><br>
+        你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom_m" value="_guest@gmail.com" /><br>
+    	主題：<input type="text" id="sendsubject_m" value="關於這故事我想說..." size="30" />
+    	<br>
+    	想說什麼：<br>
+    	<textarea id="sendContext_m" style="width:90%;" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail_m" onclick="javascript:return sendmail_mobile()" value="send">送出</button>
+    </div>
+-->
+</div>
+
+</html>

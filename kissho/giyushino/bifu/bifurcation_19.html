@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>平行線的奇蹟〈十九〉</title>
+	<style type="text/css">
+		html {
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%;
+		  -moz-text-size-adjust: 100%;
+		  text-size-adjust: 100%;
+		}
+		body{
+		    
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		}
+		p
+		{
+		max-height: 100%;
+		line-height: 1.8;
+		font-family: Arial;
+		 font-size: 11pt;
+		 font-style: normal;
+		}
+		.topic{
+			max-height: 100%;			
+			font-family: Arial;
+			 font-size: 14pt;
+			 font-style: normal;
+		}
+		#sendmsg{
+		    display:none;
+		}
+		#sendmsg2{
+		    display:block;
+		    -webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+		    
+		}
+		.explain{
+		    color: silver;
+		}
+		
+		/*大型桌機外觀*/
+	@media screen and (min-width: 1001px){/*裝置寬度大於1200px 從1201px開始*/
+	body{
+		    
+			-webkit-writing-mode: horizontal-tb;
+			writing-mode: horizontal-tb;
+			
+			letter-spacing: 1px;
+		    line-height: 24px;
+		    
+		}
+		#main{
+		    width:1000px;
+		    margin:0 auto;
+		    justify-content:center;   
+		}
+		.rotate{
+          -webkit-transform:rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        #sendmsg{
+		    display:block;
+		}
+		#sendmsg2{
+		    display:none;
+		}
+		.explain{
+		    color: silver;
+		}
+	}
+	</style>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendmail(){
+		    //alert('success');
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom").value;
+    			var subject=document.getElementById("sendsubject").value;
+    			var senderName=document.getElementById("sendname").value;
+    			var context=document.getElementById("sendContext").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom");
+		    a.value='';
+		    var b = document.getElementById("sendsubject");
+		    b.value='';
+		    var c = document.getElementById("sendname");
+		    c.value='';
+		    var d = document.getElementById("sendContext");
+		    d.value='';
+		}
+		function sendmail_mobile(){
+		    var msg = "確定要送出嗎？"; 
+		    if (confirm(msg)==true){
+		        var sender=document.getElementById("sendfrom_m").value;
+    			var subject=document.getElementById("sendsubject_m").value;
+    			var senderName=document.getElementById("sendname_m").value;
+    			var context=document.getElementById("sendContext_m").value;
+    			if(sender==''){
+    			    sender='guest@gmail.com';
+    			}
+    			if(context==''){
+    			    alert('麻煩填寫感想再送出喔...感激不盡><');
+    			    return false;
+    			}
+    			Email.send({
+    				SecureToken:"aebc863d-e88c-4a5f-89a3-b23911b9d712",
+    				To:'yrrek9120@gmail.com',
+    				From:sender,
+    				Subject:senderName+':'+subject,
+    				Body:context,
+    			}).then(
+    				message=>alert(message)
+    			);
+    			
+		    }
+		    else{
+		        return false;
+		    }
+		    
+		    var a = document.getElementById("sendfrom_m");
+		    a.value='';
+		    var b = document.getElementById("sendsubject_m");
+		    b.value='';
+		    var c = document.getElementById("sendname_m");
+		    c.value='';
+		    var d = document.getElementById("sendContext_m");
+		    d.value='';
+		}
+	</script>
+    
+</head>
+<body>
+    <div id="main">
+    <p class="topic">《平行線的奇蹟》章十九：祈願</p><hr>
+<p>　隔天，依照預定在醫師的安排下富岡又做了一次全身性的精密檢查。而忍也特地空出了一天的時間，留在醫院等候富岡的檢查報告。<br />　遺憾的是，經過一整天下來不安的等待後，富岡的身體狀況不但沒有好轉，各方面生理機能甚至比一週前入院時又更低下了。<br /><br />　面對這樣的結果，連醫院最優秀的醫師都只能望天興嘆了。<br /><br />「我們用盡了各種方式，但就是查不出他到底生了什麼病。」摘下眼鏡，院長疲憊的揉捏鼻樑：「很抱歉⋯&zwnj;⋯&zwnj;」<br />「不⋯&zwnj;⋯&zwnj;我了解您已經盡力了⋯&zwnj;⋯&zwnj;」垂著雙肩，忍口吻藏不住的沮喪：「謝謝⋯&zwnj;⋯&zwnj;」<br /><br />　既然醫院已無能為力，那就沒有留院觀察的意義了。於是在醫院度過一夜後，忍雇了車將她和富岡兩人載回蝶屋。<br />　大夥得知富岡的檢查結果後也紛紛感到既無奈又哀傷，整個蝶屋陷入了一片低氣壓。<br /><br />　但日子還是得過下去──<br /><br />　即使少了一個人手，大家依舊勉強打起精神、白天努力工作，晚上照常休息。而忍每週則減少了一天藥房的班，多出的這一天時間讓她跑遍了各處的藥房、診間搜刮稀有的藥材和醫書，不然就是待在蝶屋的醫務室啃整天的書。<br /><br />　現在的她只能靠自己了。<br />　這是獵鬼人的業，如果連她都束手無策，那麼世界上大概也沒有人能夠幫忙了。不僅是富岡，不死川、炭治郎等其他曾出現斑紋的人，說不定這是他們唯一且最後的機會。<br />　忍不住怨憎自己醒悟得太晚，她只求這次能夠來得及做點什麼、不要再失去什麼──<br /><br /><br />＊＊＊<br /><br /><br />「沒想到你居然會主動找上我。」<br /><br />　跟著前頭的領路人帶進門，此時的忍人在郊外、有一點年份的陳舊洋房中。<br />　屋外一片黑暗，時間是晚上六點左右，通常這時候她應該會在蝶屋和大夥用餐。但由於這次她拜訪的對象「體質特殊」，無法在白天時刻會面。<br /><br />　眼前的「人」，嚴格來說並不是「人類」。<br />　他是曾經在無限城一役中幫助鬼殺隊、也是珠世的助手兼夥伴，愈史郎。<br /><br />「我以為這輩子大概不會再看到你了。」帶領著忍走上往二樓的階梯，愈史郎半挖苦道。<br />　雖然沒有人知道他確切的住所在哪，但透過鎹鴉仍可以聯絡到人。即便如此，他還是沒料到忍會提出見面的請求。<br />「我本來也是這樣想──」忍語氣平淡，回話辛辣絲毫不輸愈史郎：「這可能是所謂的孽緣吧？」<br />　不理會她的酸言酸語，愈史郎一邊走著一邊說：「你身上的藤花香倒是淡了不少。」<br />　沒多說什麼，忍只是簡短回應了句：「託你的福。」<br />　儘管解毒的藥方的確是自己親手交給她的，但愈史郎可不認為忍是會乖乖用藥的──至少當時他所看到她的態度和眼神，那一點都不像是有積極求生慾望的人。<br />　是「他」嗎？愈史郎還記得離開蝶屋前遇到的那個人，曾為鬼殺隊水柱的富岡義勇。那時候的富岡看上去神色微鬱，似乎有所擔憂，他直覺地將富岡的情緒和忍聯想到一起。<br />　忍的個性他是清楚的，想必能讓她願意服藥富岡鐵定費了一番功夫，這也表示富岡在她心中而言應該有特別的地位。<br /><br />　走到二樓的其中一個房間，愈史郎拿出鑰匙打開了鎖、推門而入。<br />　進入房間後他點亮了燈，藉由燈光可看見房間中央有一副桌椅，靠牆的幾個書櫃上擺滿了書，原來這是一間書房。<br /><br />「珠世大人的書都在這裡了。」愈史郎道，「隨你看吧。」<br />「嗯，謝謝。」一邊向他道謝，忍走向書櫃。<br />　愈史郎望著她的背影，幾天前他收到忍派鎹鴉送的信只說要來借書，卻沒明說原因。他和忍可不是那種平常會喝茶聊天的朋友，所以這次來的目的大概也不單純──<br /><br />「──富岡怎麼了嗎？」他開門見山地問，然後看見忍的背影明顯的怔住了。<br />　果然與富岡有關嗎？愈史郎暗忖，而忍久久不發一語，身軀彷彿凝固一般、紋風不動。<br />　書房中一片寂靜，沒半點聲音，愈史郎看到燈光下忍的影子搖曳而顫抖，也許是光源不穩定閃爍的關係，他不是很確定。<br /><br />「是我的錯。」忍輕聲開口，「他早就有異狀了，可是我什麼也沒做。」<br />「⋯&zwnj;⋯&zwnj;什麼意思？」愈史郎不解地問。<br />　於是忍大致向他說明了斑紋與其帶來的後遺症，而愈史郎聽完後深深吸了口氣，說：「意思是，像炭治郎他們有顯現斑紋的人，皆命不久矣嗎？」<br />　忍沒有回答他的問題，她不想附和，害怕一旦同意了這個論點就會變成真實。<br />　而愈史郎也不再繼續這個話題，轉而掏出了懷中的一串鑰匙，放在桌上。<br />「這是屋子的鑰匙。」他說，「你想在這待多久都行，把書帶回去也無妨。」<br />「你是說我可以借走這裡全部的書？」忍確認性的問，而愈史郎搖搖頭。<br />「我的意思是，你想的話，書就是你的。」他不疾不徐道，「我不是醫生，這些書在我這也發揮不了作用，不如送你。」頓了一下，他又補了句：「⋯&zwnj;⋯&zwnj;珠世大人的話一定也會這麼做吧。」<br />「愈史郎先生⋯&zwnj;⋯&zwnj;」忍望著他，目光中流露出感激之情。<br />　被看得渾身不自在，愈史郎撇過頭道：「我要先走了，書你自個兒處理吧，恕不奉陪。」<br />「嗯，慢走不送。」也不跟他客套，忍直接拿了本書在桌前坐下。<br /><br />　愈史郎轉身而去，不過在即將踏出房門的前一刻，他停下腳步回頭一望。<br /><br />「忍。」<br />　聞聲從書中抬起頭，忍對上他的雙眼：「怎麼？」<br />「你會研究出來的吧？解藥。」愈史郎向她問道。<br />　一陣四目交接，原本毫無情緒的忍的眼神，漸漸浮現凝重和堅毅之外，還有孤注一擲的決心。<br /><br />「──我沒有退路了。」<br /><br /><br />＊＊＊<br /><br /><br />　有了珠世的藏書後，忍花了更多時間在鑽研這些書上。畢竟她自己的書她早已翻過不下百次，而珠世是位了不起的醫者，從之前跟她短暫的合作忍就很清楚她的手腕和技術有多強。因此有她的書無疑是一針強心劑，讓忍的心中又燃起一絲希望。<br /><br />　除了珠世的書之外，前陣子從倉庫整理出來的老家的書籍，自然也是忍研究的素材。不過因為年代久遠又長年堆在倉庫沒有善加保存，不少書頁已經髒污毀損、或是被蟲蛀光了。<br />　翻著家裡的舊書忍不禁感嘆：真的是種什麼因得什麼果、沒想到有一天她會需要這些曾經被她埋沒忽視的老書，她真想回到過去斥責以前的自己。<br /><br />　老家大部分的書都是父母收藏的，不過也有少數幾本似乎是更久以前的書──可能是祖父母的書。她翻開其中一本，眼見所得的卻非藥方，而有點像是日記之類的。<br />　忍沒有見過她的祖父母，但她曾從父母那邊耳聞祖父和曾祖父似乎也是學藥的。<br />　日記的字跡非常潦草，加上書頁破舊，整個看起來更難以辨讀⋯&zwnj;⋯&zwnj;看來這位老人家的寫字方式挺不拘小節的，忍心想。可現在不是欣賞別人生活瑣事的時間，於是她沒多想的便把這本書推到角落放置了。<br /><br /><br />　一天中午，菜穗和小澄備好中餐後，前往醫務室準備請忍用膳。<br /><br />「忍大人──可以吃飯了──」<br />　小澄一邊輕敲門板一邊呼喚，但房內卻無半點回應和聲響，兩個女孩對望了一眼。<br />「不在醫務室嗎？」小澄問道，而菜穗歪頭：「咦⋯&zwnj;⋯&zwnj;但我不久前才送茶來欸⋯&zwnj;⋯&zwnj;」<br />「還是臨時離開去哪了？」小澄喃喃的說，想了一下決定開門確認：「忍大人，不好意思打擾了，我開門囉──」<br /><br />　小心翼翼地拉開房門，兩人發現忍並不如往常一樣坐在書桌前──<br /><br />「咦？！」「忍大人！」<br />　椅子翻倒在一旁，而忍趴在地板上，面無血色且意識不清。見到這幕的女孩們大吃一驚，立刻衝到忍的身旁。<br />「忍大人！您沒事吧！」小澄恐慌的搖晃忍的肩膀，而菜穗也相當緊張，但她竭力讓自己先冷靜然後提議：「我們先把忍大人搬到床上吧！」<br />「噢、好、好！」<br />　兩人七手八腳地搬運著，幸好忍身軀嬌小，費了一番功夫總算是順利將她搬上床。<br />　這一串紛擾似乎驚動了原本不省人事的忍，讓她緩緩張開眼。<br /><br />「忍大人，您醒了！」「您還好嗎？」<br />　小澄和菜穗趕緊上前關心忍的狀況，後者一臉痛苦、虛弱的說：「小澄⋯&zwnj;⋯&zwnj;麻煩扶我起來⋯&zwnj;⋯&zwnj;菜穗⋯&zwnj;⋯&zwnj;幫我把那邊的盆子拿過來給我⋯&zwnj;⋯&zwnj;」<br />兩人紛紛照著忍的吩咐動起身子。<br /><br />　將菜穗送來的盆子抵在胸腹之間，不出幾秒後忍開始感到噁心、接著彎腰吐出一口又一口深色液體在盆子裡。就這麼吐了一分鐘後，嘔吐的衝動似乎慢慢減緩了。<br />　見忍不再嘔吐，小澄連忙接過盆子放在一旁地上、取出手帕擦拭她的嘴角，菜穗也幫忙輕拍她的背，希望可以舒緩她一點不適感。<br /><br />　稍作休息之後忍感覺好一點了，臉色也漸漸恢復：「抱歉，嚇到你們了吧。」<br />「忍大人，您、您到底是⋯&zwnj;⋯&zwnj;」小澄和菜穗一臉驚魂未定，深怕她是不是身子出大問題了：「您哪裡不舒服嗎？」<br />「不⋯&zwnj;⋯&zwnj;我沒事，只是在試藥。」忍露出一絲苦笑，「看來藥性配得有些太烈了。」<br />「試、試藥⋯&zwnj;⋯&zwnj;？」兩個女孩面面相覷，然後又轉頭問道：「忍大人，您在配什麼藥？」<br />「⋯&zwnj;⋯&zwnj;富岡先生，的藥⋯&zwnj;⋯&zwnj;」忍輕描淡寫道，「我要先試過，才能確定這藥是能喝的⋯&zwnj;⋯」<br />「忍大人！」「您不能這樣！」<br />　兩張嘴巴異口同聲地發出反對的聲音，就算不懂藥理的她們也知道以身試藥是很危險的事，藥也是一種毒、既可救人也可殺人，如果不小心調錯一點比例，後果不堪設想。<br /><br />「沒事的，我很清楚手上的藥材有什麼作用。」忍淡淡一笑，「我會拿捏好分寸的。」<br />「⋯&zwnj;⋯&zwnj;可是！」女孩們知道忍是不會這樣放棄的，儘管想說點什麼勸阻她，但話還沒出口就被忍堵住了：「午飯我就先不用了，我沒什麼胃口。」<br />　輕巧的下床，忍說道：「不好意思，小澄、菜穗，我先回房休息了。」<br /><br />　不等她們回應，忍逕自離開醫務室了。<br />　留下兩個女孩，憂心忡忡卻無能為力的望著她的背影離去。<br /><br /><br />＊＊＊<br /><br /><br />　忍沒有回到自己的房間，而是前往更遠的另一棟廂房。<br />「打擾了。」她向房內出聲，裡面卻沒有任何回饋──當然不會有啊，她心酸的想。<br />　拉開房門，只見房間裡有一床被褥微微隆起，看來有人正在歇息。<br />　扶著門邊她輕嘆一口氣。<br /><br />　躺在床上的是已經昏睡多天的富岡義勇。<br />　從醫院宣告束手無策後忍便將他接回來，反正都到這個地步了，待在哪裡都差不多。<br /><br />　走到床頭蹲下，她伸手輕撫富岡的臉龐、雙眉、睫毛、鼻子、下巴等等⋯&zwnj;⋯&zwnj;<br />　好溫暖，透過肌膚傳來的體溫證明他還活著，可是意識卻像是被困在另一個空間，只剩肉體在這裡。<br />　彎下身，她將額頭輕輕碰上富岡的，閉著眼睛感受溫度的流動。<br /><br /><br />「神啊⋯&zwnj;⋯&zwnj;您已經帶走了爸媽、帶走了姊姊⋯&zwnj;⋯&zwnj;求您了，不要連他也帶走⋯&zwnj;⋯&zwnj;」<br /><br />　從來沒有這麼虔誠的禱告過。<br />　感受到自己是多麼卑微且渺小，她在心中一遍又一遍的複誦著、祈求著。<br /><br /><br />＊＊＊<br /><br /><br />　不知道睡了多久。<br /><br />　吱吱喳喳吱吱喳喳，陣陣鳥叫聲時而遙遠、時而靠近，漸漸喚醒了酣眠中的富岡。<br />「唔──」睜開眼睛，第一眼入目的是湛藍的天空。感覺到背後堅硬的觸感，他掙扎起身，發現原來他竟是睡在泥土地上，而四周是一片林地。<br /><br />「⋯&zwnj;⋯&zwnj;？」富岡抓抓頭髮，「這是哪裡⋯&zwnj;⋯&zwnj;？」<br />　沒有來過這裡的印象，是一個完全陌生的地方。對於失去意識前的記憶有點模糊，但不管怎樣他人應該是在蝶屋才對、怎麼會跑到這個荒郊野外？<br /><br />　坐在地上的富岡花了五分鐘的時間才讓自己徹底清醒、回想起睡前的事──他記得他本來在院子裡、「必勝」櫻花樹下跟忍閒聊，突然一陣濃厚的睡意襲來，醒來後他人就在這了。<br />　突然手上傳來一陣刺癢感，他一秒反射動作用左手拍掉手背上的異物，原來是一隻巨大的螞蟻剛剛在咬他。<br /><br />「咦！？」<br /><br />　這一拍讓他受到不小的驚嚇──原本應該早就失去的右手，現在居然完好如初的連在他身上！<br />「這、怎麼可能⋯&zwnj;⋯&zwnj;！」他拉起衣袖、舉起手，像是看著異形般驚恐的猛瞧自己的右臂：「不可能啊⋯&zwnj;⋯&zwnj;」<br />　過了幾秒，他恍然大悟的說：「對了，這一定是夢！我還沒醒來。」然後用力地拍打自己的臉試圖讓自己從夢境中醒來。<br />　但沒用，無論他怎麼扇巴掌、毆打自己，他依舊沒有脫離這個場景。<br /><br />「不可能啊！這一定不是現實啊⋯&zwnj;⋯&zwnj;」臉頰實在痛到不行，他只好停下手。<br />　又環顧了周圍，富岡嘆了一口氣：既然無法把自己揍醒，那總得尋找其他能離開的方法──<br />　站起身活動了一下筋骨和四肢，好久沒有右手的感覺了、還真有點不習慣，富岡心中苦笑。</p>
+
+
+　<p><a href="bifurcation_20.html"><img src="arrow_next.png" width="100px" class="rotate"></a>(點此箭頭看下一章或 <a href="https://kissho.000webhostapp.com/kissho/index.html">回目錄頁</a>)</p>
+<br><!--
+    <div id="sendmsg">
+        <p>&nbsp;</p>
+        <p>想說的話：</p>
+        <p>你的大名：<input type="text" id="sendname"/></p>
+        <p>你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom" value="_guest@gmail.com" /></p>
+    	<p>主題：<input type="text" id="sendsubject" value="關於這故事我想說..." size="30"/></p>
+    	想說什麼：<br><textarea id="sendContext" cols="50" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail" onclick="javascript:return sendmail()" value="send">送出</button>
+    </div>
+    <div id="sendmsg2">
+        <p>想說的話：</p>
+        你的大名：<input type="text" id="sendname_m"/><br>
+        你的email(可留可不留，留的話會回信)：<input type="text" id="sendfrom_m" value="_guest@gmail.com" /><br>
+    	主題：<input type="text" id="sendsubject_m" value="關於這故事我想說..." size="30" />
+    	<br>
+    	想說什麼：<br>
+    	<textarea id="sendContext_m" style="width:90%;" rows="5"></textarea>
+    	<br>
+    	<button id="btn_sendmail_m" onclick="javascript:return sendmail_mobile()" value="send">送出</button>
+    </div>
+    -->
+</div>
+
+</html>
